@@ -1,0 +1,1926 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Прием смс онлайн, подтверждений и активаций СМС на виртуальные и одноразовые номера, а также аренда временных номеров с приемом СМС для верификаций и регистраций без вашего номера телефона."
+        lang="ru">
+
+    <link rel="icon" href="https://sms-activation-service.com/favicon.png?5" type="image/x-icon">
+
+    <!-- CSRF Token -->
+
+    <title>Бесплатные номера телефонов для приема смс онлайн</title>
+
+    <style type="text/css">
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(/cf-fonts/s/roboto/5.0.11/latin/300/normal.woff2);
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(/cf-fonts/s/roboto/5.0.11/vietnamese/300/normal.woff2);
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(/cf-fonts/s/roboto/5.0.11/cyrillic/300/normal.woff2);
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(/cf-fonts/s/roboto/5.0.11/latin-ext/300/normal.woff2);
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/300/normal.woff2);
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(/cf-fonts/s/roboto/5.0.11/greek/300/normal.woff2);
+            unicode-range: U+0370-03FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(/cf-fonts/s/roboto/5.0.11/greek-ext/300/normal.woff2);
+            unicode-range: U+1F00-1FFF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/cf-fonts/s/roboto/5.0.11/greek/400/normal.woff2);
+            unicode-range: U+0370-03FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/cf-fonts/s/roboto/5.0.11/latin-ext/400/normal.woff2);
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/cf-fonts/s/roboto/5.0.11/latin/400/normal.woff2);
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/cf-fonts/s/roboto/5.0.11/vietnamese/400/normal.woff2);
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/cf-fonts/s/roboto/5.0.11/cyrillic/400/normal.woff2);
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/400/normal.woff2);
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/cf-fonts/s/roboto/5.0.11/greek-ext/400/normal.woff2);
+            unicode-range: U+1F00-1FFF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(/cf-fonts/s/roboto/5.0.11/latin-ext/500/normal.woff2);
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(/cf-fonts/s/roboto/5.0.11/vietnamese/500/normal.woff2);
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(/cf-fonts/s/roboto/5.0.11/greek/500/normal.woff2);
+            unicode-range: U+0370-03FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(/cf-fonts/s/roboto/5.0.11/cyrillic/500/normal.woff2);
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(/cf-fonts/s/roboto/5.0.11/greek-ext/500/normal.woff2);
+            unicode-range: U+1F00-1FFF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/500/normal.woff2);
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(/cf-fonts/s/roboto/5.0.11/latin/500/normal.woff2);
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            src: url(/cf-fonts/s/roboto/5.0.11/vietnamese/700/normal.woff2);
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            src: url(/cf-fonts/s/roboto/5.0.11/latin/700/normal.woff2);
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            src: url(/cf-fonts/s/roboto/5.0.11/latin-ext/700/normal.woff2);
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            src: url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/700/normal.woff2);
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            src: url(/cf-fonts/s/roboto/5.0.11/greek-ext/700/normal.woff2);
+            unicode-range: U+1F00-1FFF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            src: url(/cf-fonts/s/roboto/5.0.11/greek/700/normal.woff2);
+            unicode-range: U+0370-03FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            src: url(/cf-fonts/s/roboto/5.0.11/cyrillic/700/normal.woff2);
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            src: url(/cf-fonts/s/roboto/5.0.11/cyrillic/900/normal.woff2);
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            src: url(/cf-fonts/s/roboto/5.0.11/latin-ext/900/normal.woff2);
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            src: url(/cf-fonts/s/roboto/5.0.11/greek/900/normal.woff2);
+            unicode-range: U+0370-03FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            src: url(/cf-fonts/s/roboto/5.0.11/greek-ext/900/normal.woff2);
+            unicode-range: U+1F00-1FFF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            src: url(/cf-fonts/s/roboto/5.0.11/vietnamese/900/normal.woff2);
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            src: url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/900/normal.woff2);
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            src: url(/cf-fonts/s/roboto/5.0.11/latin/900/normal.woff2);
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            font-display: swap;
+        }
+    </style>
+    <!-- Styles -->
+    <link href="static/css/main.css" rel="stylesheet">
+    <script type="application/ld+json">
+      [{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SMS SERVICE",
+        "url": "https://sms-activation-service.com",
+        "description": "Бесплатные виртуальные номера для приема СМС и активации VK, OK, Telegram, Gmail, WhatsApp и других сервисах",
+        "image": "https://sms-activation-service.com/img/logotype.svg/",
+        "sameAs": ["tg://resolve?domain=sms_service_online"]
+      }]
+    </script>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="static/img/logo-icon.svg" alt="sms service free">
+                    <span class="logo-text">Free Virtual Numbers</span>
+                    <span class="logo-descr">
+                        Бесплатные номера для приема смс
+                    </span>
+                </div>
+
+
+
+
+                <div class="dropdown dropdown-lang">
+                    <button class="dropdown-btn header__btn header__lang">
+                        Ru
+                        <img src="../free-numbers-res/img/falgs/ru.svg" alt="img">
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="wrapper">
+                            <a href="index.htm">
+                                RU
+                                <img src="../free-numbers-res/img/falgs/ru.svg" alt="Онлайн номера телефонов в России">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-en/">
+                                EN
+                                <img src="../free-numbers-res/img/falgs/um.svg" alt="Онлайн номера телефонов в Украине">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-pt/">
+                                PT
+                                <img src="../free-numbers-res/img/falgs/pt.svg"
+                                    alt="Онлайн номера телефонов в Португалии">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-tr/">
+                                TR
+                                <img src="../free-numbers-res/img/falgs/tr.svg" alt="Онлайн номера телефонов в Турции">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-cn/">
+                                CN
+                                <img src="../free-numbers-res/img/falgs/cn.svg" alt="Китайские номера телефонов">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-de/">
+                                DE
+                                <img src="../free-numbers-res/img/falgs/de.svg"
+                                    alt="Виртаульные номера телефонов в Германии">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-es/">
+                                ES
+                                <img src="../free-numbers-res/img/falgs/es.svg"
+                                    alt="Виртаульные номера телефонов в Испании">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-fr/">
+                                FR
+                                <img src="../free-numbers-res/img/falgs/fr.svg"
+                                    alt="Виртаульные номера телефонов во Франции">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-kr/">
+                                KR
+                                <img src="../free-numbers-res/img/falgs/kr.svg"
+                                    alt="Виртаульные номера телефонов в Корее">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-pl/">
+                                PL
+                                <img src="../free-numbers-res/img/falgs/pl.svg"
+                                    alt="Виртаульные номера телефонов в Польше">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-id/">
+                                ID
+                                <img src="../free-numbers-res/img/falgs/id.svg"
+                                    alt="Виртаульные номера телефонов в Германии">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-nl/">
+                                NL
+                                <img src="../free-numbers-res/img/falgs/nl.svg"
+                                    alt="Онлайн номера телефонов в Нидерландах">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-vn/">
+                                VN
+                                <img src="../free-numbers-res/img/falgs/vn.svg" alt="Онлайн номера телефонов Вьетнам">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-th/">
+                                TH
+                                <img src="../free-numbers-res/img/falgs/th.svg"
+                                    alt="Временные номера телефонов в Тайланде">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-cz/">
+                                CZ
+                                <img src="../free-numbers-res/img/falgs/cz.svg"
+                                    alt="Временные номера телефонов в Чехии">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-it/">
+                                IT
+                                <img src="../free-numbers-res/img/falgs/it.svg"
+                                    alt="Временные номера телефонов в Италии">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-jp/">
+                                JP
+                                <img src="../free-numbers-res/img/falgs/jp.svg"
+                                    alt="Временные номера телефонов в Японии">
+                            </a>
+                            <a href="https://sms-activation-service.com/free-numbers-cn/">
+                                CN
+                                <img src="../free-numbers-res/img/falgs/cn.svg"
+                                    alt="Временные номера телефонов в Китае">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-menu header__btn"></button>
+            </div>
+            <div class="header-menu modal" id="modal-menu">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="menu-top">
+                            <h4 class="heading">Меню</h4>
+                            <button class="modal-close"></button>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown-btn header__btn header__city">
+                                <img src="../free-numbers-res/img/icon-globe.svg" alt="img">
+                                Доступные страны
+                            </button>
+                            <div class="dropdown-content">
+                                <p class="heading">АЗИЯ</p>
+                                <div class="wrapper">
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/ru.jpg" alt="img">
+                                        Россия
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/uk.jpg" alt="img">
+                                        Украина
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/id.jpg" alt="img">
+                                        Индонезия
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/mn.jpg" alt="img">
+                                        Мьянма
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/kn.jpg" alt="img">
+                                        Кения
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/ng.jpg" alt="img">
+                                        Папуа Новая Гвинея
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/kz.jpg" alt="img">
+                                        Казахстан
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/mz.jpg" alt="img">
+                                        Малайзия
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/cn.jpg" alt="img">
+                                        Китай
+                                    </a>
+                                    <a href="#" class="more">Показать все страны</a>
+                                </div>
+                                <p class="heading">Европа</p>
+                                <div class="wrapper">
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/ru.jpg" alt="img">
+                                        Россия
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/uk.jpg" alt="img">
+                                        Украина
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/id.jpg" alt="img">
+                                        Индонезия
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/mn.jpg" alt="img">
+                                        Мьянма
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/kn.jpg" alt="img">
+                                        Кения
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/ng.jpg" alt="img">
+                                        Папуа Новая Гвинея
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/kz.jpg" alt="img">
+                                        Казахстан
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/mz.jpg" alt="img">
+                                        Малайзия
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/cn.jpg" alt="img">
+                                        Китай
+                                    </a>
+                                    <a href="#" class="more">Показать все страны</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown-btn header__btn header__city">
+                                <img src="../free-numbers-res/img/icon-phone.svg" alt="img">
+                                Бесплатные номера
+                            </button>
+                            <div class="dropdown-content">
+                                <div class="wrapper">
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/ru.jpg" alt="img">
+                                        Россия
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/uk.jpg" alt="img">
+                                        Украина
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/id.jpg" alt="img">
+                                        Индонезия
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/mn.jpg" alt="img">
+                                        Мьянма
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/kn.jpg" alt="img">
+                                        Кения
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/ng.jpg" alt="img">
+                                        Папуа Новая Гвинея
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/kz.jpg" alt="img">
+                                        Казахстан
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/mz.jpg" alt="img">
+                                        Малайзия
+                                    </a>
+                                    <a href="#">
+                                        <img src="../free-numbers-res/img/falgs/cn.jpg" alt="img">
+                                        Китай
+                                    </a>
+                                    <a href="#" class="more">Показать все страны</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-bottom">
+                        <button class="">
+                            <img src="../free-numbers-res/img/icon-key.svg" alt="img">
+                            Вход
+                        </button>
+                        <button class="header__btn modal-register">
+                            <img src="../free-numbers-res/img/icon-user.svg" alt="img">
+                            Регистрация
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container free-numbers">
+                <div class="main-img">
+                    <img class="main-img-img" src="../free-numbers-res/img/main-image.png" alt="img">
+                </div>
+                <div class="main-title">
+                    <h1>
+                        Бесплатный прием смс на временные номера
+                    </h1>
+                    <p>
+                        Прием СМС онлайн на виртуальный номер для приватной
+                        регистрации на различных сайтах, сервисах и приложениях
+                    </p>
+                    <a href="#activity" class="btn main__btn">Попробовать бесплатно</a> <br>
+                    <a href="#what" class="btn-link go_to">Подробнее о временных номера для смс</a>
+                </div>
+
+            </div>
+        </main>
+
+        <section class="informal">
+            <div class="container">
+                <h2>
+                    Временный номер телефона идеально подойдет:
+                </h2>
+                <div class="wrapper">
+                    <div class="informal-item">
+                        <div class="informal-item__icon">
+                            <img src="../free-numbers-res/img/icons/icon-1.svg"
+                                alt="Регистрация без реального номера телефона">
+                        </div>
+                        <p>
+                            Регистрации на различных сайтах, сервисах и приложениях
+                        </p>
+                    </div>
+                    <div class="informal-item">
+                        <div class="informal-item__icon">
+                            <img src="../free-numbers-res/img/icons/icon-2.svg"
+                                alt="Одноразовые и временные номера это замена реальному номеру телефона">
+                        </div>
+                        <p>
+                            Временный номер как альтернатива вашему реальному номера
+                        </p>
+                    </div>
+                    <div class="informal-item">
+                        <div class="informal-item__icon">
+                            <img src="../free-numbers-res/img/icons/icon-3.svg" alt="Защита вашей приватности">
+                        </div>
+                        <p>
+                            Сохраняйте конфиденциальность с помощью фейковых номеров для смс
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="what" id="what">
+            <div class="container wrapper">
+                <img src="../free-numbers-res/img/icons/icon-4.svg" class="what__img"
+                    alt="Что такое временный, одноразовый и виртуальный номера телефона">
+                <div class="what-title">
+                    <h3 class="what__heading">
+                        Что такое виртуальный номер для приема смс?
+                    </h3>
+                    <p class="what__text">
+                        Виртуальный номер телефона для приема СМС бесплатно может получить каждый посетитель данного
+                        сайта, предоставляется благодаря наличию в нашем распоряжении большого количества реальных
+                        SIM-карт действующих операторов сотовой связи. Термин “виртуальный” в названии фигурирует лишь
+                        потому, что номера доступны пользователям исключительно онлайн – посредством захода на страницу
+                        со списком сообщений. А термин “одноразовый” обычно используется для обозначения того факта что
+                        онлайн сим карта номера не переходит к вам в аренду или собственность, номер спустя время
+                        удаляется и утилизируется.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="online_sms">
+            <div class="container online_sms-content">
+                <h2 class="online_sms__heading">Как принять СМС онлайн?</h2>
+                <div class="wrapper">
+                    <div class="online_sms-item">
+                        <p class="heading">
+                            <span class="count">1</span>
+                            <sub>Шаг</sub>
+                            <img src="../free-numbers-res/img/icons/icon-5.svg" alt="Выбора страны для покупки номера">
+                        </p>
+                        <p class="text">Выберите страну в списке ниже</p>
+                    </div>
+                    <div class="online_sms-item">
+                        <p class="heading">
+                            <span class="count">2</span>
+                            <sub>Шаг</sub>
+                            <img src="../free-numbers-res/img/icons/icon-6.svg"
+                                alt="Выбор достурных номеров для приема смс онлайн">
+                        </p>
+                        <p class="text">Выберите бесплатный номер телефона и вводите его на сайте</p>
+                    </div>
+                    <div class="online_sms-item">
+                        <p class="heading">
+                            <span class="count">3</span>
+                            <sub>Шаг</sub>
+                            <img src="../free-numbers-res/img/icons/icon-7.svg"
+                                alt="автоматический прием смс прямо на сайте">
+                        </p>
+                        <p class="text">Новые смс для выбранного номера появляются онлайн</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="activity" id="activity">
+            <div class="container wrapper">
+                <div class="activity-list">
+                    <p class="activity__heading">Выберите страну</p>
+                    <div class="wrap">
+                        <div class="dropdown " data-country-code-api="russia">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/ru.svg" alt="ru"
+                                    class="sprite-country js-numbers-flag sprite-icon-7">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Россия
+                                <span class="fade">+7</span>
+                            </button>
+
+                            <div class="dropdown-content" id="left-number" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="dropdown " data-country-code-api="united_kingdom">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/gb.svg" alt="gb"
+                                    class="sprite-country js-numbers-flag sprite-icon-44">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Великобритания
+                                <span class="fade">+44</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="austria">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/at.svg" alt="at"
+                                    class="sprite-country js-numbers-flag sprite-icon-43">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Австрия
+                                <span class="fade">+43</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="cyprus">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/cy.svg" alt="cy"
+                                    class="sprite-country js-numbers-flag sprite-icon-357">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Кипр
+                                <span class="fade">+357</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="spain">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/es.svg" alt="es"
+                                    class="sprite-country js-numbers-flag sprite-icon-34">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Испания
+                                <span class="fade">+34</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="germany">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/de.svg" alt="de"
+                                    class="sprite-country js-numbers-flag sprite-icon-49">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Германия
+                                <span class="fade">+49</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="malaysia">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/my.svg" alt="my"
+                                    class="sprite-country js-numbers-flag sprite-icon-60">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Малайзия
+                                <span class="fade">+60</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="indonesia">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/id.svg" alt="id"
+                                    class="sprite-country js-numbers-flag sprite-icon-62">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Индонезия
+                                <span class="fade">+62</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="philippines">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/ph.svg" alt="ph"
+                                    class="sprite-country js-numbers-flag sprite-icon-63">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Филиппины
+                                <span class="fade">+63</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="moldova">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/md.svg" alt="md"
+                                    class="sprite-country js-numbers-flag sprite-icon-373">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Молдова
+                                <span class="fade">+373</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="estonia">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/ee.svg" alt="ee"
+                                    class="sprite-country js-numbers-flag sprite-icon-372">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Эстония
+                                <span class="fade">+372</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="finland">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/fi.svg" alt="fi"
+                                    class="sprite-country js-numbers-flag sprite-icon-358">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Аландские острова
+                                <span class="fade">+358</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="france">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/fr.svg" alt="fr"
+                                    class="sprite-country js-numbers-flag sprite-icon-33">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Франция
+                                <span class="fade">+33</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="lithuania">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/lt.svg" alt="lt"
+                                    class="sprite-country js-numbers-flag sprite-icon-370">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Литва
+                                <span class="fade">+370</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="latvia">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/lv.svg" alt="lv"
+                                    class="sprite-country js-numbers-flag sprite-icon-371">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Латвия
+                                <span class="fade">+371</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="netherlands">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/nl.svg" alt="nl"
+                                    class="sprite-country js-numbers-flag sprite-icon-31">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Нидерланды
+                                <span class="fade">+31</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="poland">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/pl.svg" alt="pl"
+                                    class="sprite-country js-numbers-flag sprite-icon-48">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Польша
+                                <span class="fade">+48</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="portugal">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/pt.svg" alt="pt"
+                                    class="sprite-country js-numbers-flag sprite-icon-351">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Португалия
+                                <span class="fade">+351</span>
+                            </button>
+
+                            <div class="dropdown-content" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="romania">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/ro.svg" alt="ro"
+                                    class="sprite-country js-numbers-flag sprite-icon-40">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Румыния
+                                <span class="fade">+40</span>
+                            </button>
+
+                            <div class="dropdown-content" id="left-number" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown " data-country-code-api="sweden">
+                            <button class="dropdown-btn ">
+                                <img src="../free-numbers-res/img/falgs/se.svg" alt="se"
+                                    class="sprite-country js-numbers-flag sprite-icon-46">
+                                <span
+                                    class="lds-ring is-hide js-numbers-loader"><span></span><span></span><span></span><span></span></span>
+                                Швеция
+                                <span class="fade">+46</span>
+                            </button>
+
+                            <div class="dropdown-content" id="left-number" style="">
+                                <div class="dropdown-content-numbers-list">
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376304616">+79376304616</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79372642875">+79372642875</a>
+                                    <a href="#" class="btn-num" data-action="select-number"
+                                        data-number="79376735910">+79376735910</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="activity-monitor">
+                    <p class="activity__heading">
+                        Попробуйте наши бесплатные виртуальные номера
+                        <button class="btn-info modal-info">
+                            Правила пользования сервиса
+                        </button>
+                    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="wrap" id="messages-list" data-country-code-api="russia" data-number="79376304616">
+
+                       
+
+<div class="none" id="none">
+
+
+    <div class="russia-block1" id="russia-block1">
+        <div class="activity-header">
+            <button class="monitor-active cp" data-clipboard-text="79372642875">
+                <img src="https://sms-activation-service.pro/free-numbers-res/img/pixel.png" alt=""
+                    class="sprite-country sprite-icon-russia">
+                <span class="monitor-num">
+                    +79372642875
+                </span>
+                <img src="https://sms-activation-service.pro/free-numbers-res/img/icon-link.svg"
+                    alt="img">
+            </button>
+            <p class="monitor-added">1 settimana fa</p>
+            <a href="https://sms-activation-service.pro/it/?ch-free-it"
+                class="btn main__btn main-btn-2">Acquista il numero per 20 minuti</a>
+            <button class="btn-ref" data-action="refresh-messages-list">Aggiornare</button>
+        </div>
+        <div class="wrapper" data-action="scroll">
+            <div class="monitor-item">
+                <div class="monitor-item-header">
+                    <p class="monitor-item__heading signalreg">SIGNALREG</p>
+                    <p class="monitor-item__time">4 ore fa</p>
+                </div>
+                <p class="monitor-item__text">
+                    SIGNAL: Vash kod: 531822
+                    Ne delites' etim kodom
+
+                    doDiFGKPO1r
+                </p>
+                <button class="btn-copy cp" data-clipboard-text="531822">
+                    Code from SMS: <b>531822</b>
+                </button>
+            </div>
+            <div class="monitor-item">
+                <div class="monitor-item-header">
+                    <p class="monitor-item__heading workhere">WorkHere</p>
+                    <p class="monitor-item__time">4 ore fa</p>
+                </div>
+                <p class="monitor-item__text">
+                    Vash kod dlya podtverzhdeniya gotovnosti k sobesedovaniyu na portale
+                    workhere.ru: 7779
+                </p>
+                <button class="btn-copy cp" data-clipboard-text="7779">
+                    Code from SMS: <b>7779</b>
+                </button>
+            </div>
+            <div class="monitor-item">
+                <div class="monitor-item-header">
+                    <p class="monitor-item__heading spaceweb">SpaceWeb</p>
+                    <p class="monitor-item__time">4 ore fa</p>
+                </div>
+                <p class="monitor-item__text">
+                    Kod podtverzhdeniya telefona na sweb.ru: 749045
+                </p>
+                <button class="btn-copy cp" data-clipboard-text="749045">
+                    Code from SMS: <b>749045</b>
+                </button>
+            </div>
+            <div class="monitor-item">
+                <div class="monitor-item-header">
+                    <p class="monitor-item__heading winline.ru">winline.ru</p>
+                    <p class="monitor-item__time">4 ore fa</p>
+                </div>
+                <p class="monitor-item__text">
+                    Tvoy SMS kod 51192
+                </p>
+                <button class="btn-copy cp" data-clipboard-text="51192">
+                    Code from SMS: <b>51192</b>
+                </button>
+            </div>
+            <div class="monitor-item">
+                <div class="monitor-item-header">
+                    <p class="monitor-item__heading superapteka">SUPERAPTEKA</p>
+                    <p class="monitor-item__time">4 ore fa</p>
+                </div>
+                <p class="monitor-item__text">
+                    9824 vash kod podtverzhdeniya dlya superapteka.ru
+                </p>
+                <button class="btn-copy cp" data-clipboard-text="9824">
+                    Code from SMS: <b>9824</b>
+                </button>
+            </div>
+            <div class="monitor-item">
+                <div class="monitor-item-header">
+                    <p class="monitor-item__heading ozerki">Ozerki</p>
+                    <p class="monitor-item__time">4 ore fa</p>
+                </div>
+                <p class="monitor-item__text">
+                    3313 vash kod podtverzhdeniya dlya ozerki.ru
+                </p>
+                <button class="btn-copy cp" data-clipboard-text="3313">
+                    Code from SMS: <b>3313</b>
+                </button>
+            </div>
+            <div class="monitor-item">
+                <div class="monitor-item-header">
+                    <p class="monitor-item__heading samokat@">Samokat@</p>
+                    <p class="monitor-item__time">4 ore fa</p>
+                </div>
+                <p class="monitor-item__text">
+                    Vash kod dlya vhoda v Samokat: 6946
+                </p>
+                <button class="btn-copy cp" data-clipboard-text="6946">
+                    Code from SMS: <b>6946</b>
+                </button>
+            </div>
+            <div class="monitor-item">
+                <div class="monitor-item-header">
+                    <p class="monitor-item__heading +***4576">+***4576</p>
+                    <p class="monitor-item__time">4 ore fa</p>
+                </div>
+                <p class="monitor-item__text">
+                    Kod dly4_regi5tracii 802289
+                </p>
+                <button class="btn-copy cp" data-clipboard-text="dly4">
+                    Code from SMS: <b>dly4</b>
+                </button>
+            </div>
+            <div class="monitor-item">
+                <div class="monitor-item-header">
+                    <p class="monitor-item__heading hh.ru">hh.ru</p>
+                    <p class="monitor-item__time">4 ore fa</p>
+                </div>
+                <p class="monitor-item__text">
+                    3415 – vash kod podtverzhdeniya telefona/vhoda na hh.ru
+                </p>
+                <button class="btn-copy cp" data-clipboard-text="3415">
+                    Code from SMS: <b>3415</b>
+                </button>
+            </div>
+            <div class="monitor-item">
+                <div class="monitor-item-header">
+                    <p class="monitor-item__heading okru">OKru</p>
+                    <p class="monitor-item__time">4 ore fa</p>
+                </div>
+                <p class="monitor-item__text">
+                    OK: kod 463138. Ne davayte ego dazhe druz'yam!
+                </p>
+                <button class="btn-copy cp" data-clipboard-text="463138">
+                    Code from SMS: <b>463138</b>
+                </button>
+            </div>
+            <div class="monitor-item">
+                <div class="monitor-item-header">
+                    <p class="monitor-item__heading okru">OKru</p>
+                    <p class="monitor-item__time">4 ore fa</p>
+                </div>
+                <p class="monitor-item__text">
+                    OK: kod 463138. Ne davayte ego dazhe druz'yam!
+                </p>
+                <button class="btn-copy cp" data-clipboard-text="463138">
+                    Code from SMS: <b>463138</b>
+                </button>
+            </div>
+            <div class="monitor-item">
+                <div class="monitor-item-header">
+                    <p class="monitor-item__heading okru">OKru</p>
+                    <p class="monitor-item__time">4 ore fa</p>
+                </div>
+                <p class="monitor-item__text">
+                    OK: kod 463138. Ne davayte ego dazhe druz'yam!
+                </p>
+                <button class="btn-copy cp" data-clipboard-text="463138">
+                    Code from SMS: <b>463138</b>
+                </button>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+                        <div class="activity-header-none" id="activity-header-none">
+
+                            <div class="activity-header">
+                                <button class="monitor-active cp" data-clipboard-text="79376304616">
+                                    <img src="../free-numbers-res/img/pixel.png" alt=""
+                                        class="sprite-country sprite-icon-russia">
+                                    <span class="monitor-num">
+                                        +79376304616
+                                    </span>
+                                    <img src="../free-numbers-res/img/icon-link.svg" alt="img">
+                                </button>
+
+                                <p class="monitor-added">1 неделю назад</p>
+
+                                <a href="https://sms-activation-service.pro/ru/?ch-free-ru"
+                                    class="btn main__btn main-btn-2">Купить номер на 20 минут</a>
+                                <button class="btn-ref" data-action="refresh-messages-list">Обновить</button>
+                            </div>
+                            <div class="wrapper" data-action="scroll">
+                                <div class="monitor-item">
+                                    <div class="monitor-item-header">
+                                        <p class="monitor-item__heading tricolor">Tricolor</p>
+                                        <p class="monitor-item__time">41 секунду назад</p>
+                                    </div>
+                                    <p class="monitor-item__text">
+                                        Код 5224. Действует 5 минут. Ваш «Триколор».
+                                    </p>
+                                    <button class="btn-copy cp" data-clipboard-text="5224">
+                                        Код из СМС: <b>5224</b>
+                                    </button>
+                                </div>
+                                <div class="monitor-item">
+                                    <div class="monitor-item-header">
+                                        <p class="monitor-item__heading rivegauche">RiveGauche</p>
+                                        <p class="monitor-item__time">2 минуты назад</p>
+                                    </div>
+                                    <p class="monitor-item__text">
+                                        8679 - код подтверждения номера телефона в РИВ ГОШ
+                                    </p>
+                                    <button class="btn-copy cp" data-clipboard-text="8679">
+                                        Код из СМС: <b>8679</b>
+                                    </button>
+                                </div>
+                                <div class="monitor-item">
+                                    <div class="monitor-item-header">
+                                        <p class="monitor-item__heading ultravds">UltraVDS</p>
+                                        <p class="monitor-item__time">3 минуты назад</p>
+                                    </div>
+                                    <p class="monitor-item__text">
+                                        Ваш код подтверждения номера телефона на UltraVDS: 196482
+                                    </p>
+                                    <button class="btn-copy cp" data-clipboard-text="196482">
+                                        Код из СМС: <b>196482</b>
+                                    </button>
+                                </div>
+                                <div class="monitor-item">
+                                    <div class="monitor-item-header">
+                                        <p class="monitor-item__heading doctu.ru">Doctu.ru</p>
+                                        <p class="monitor-item__time">3 минуты назад</p>
+                                    </div>
+                                    <p class="monitor-item__text">
+                                        1734 - код для входа в личный кабинет doctu.ru
+                                    </p>
+                                    <button class="btn-copy cp" data-clipboard-text="1734">
+                                        Код из СМС: <b>1734</b>
+                                    </button>
+                                </div>
+                                <div class="monitor-item">
+                                    <div class="monitor-item-header">
+                                        <p class="monitor-item__heading yandex">Yandex</p>
+                                        <p class="monitor-item__time">3 минуты назад</p>
+                                    </div>
+                                    <p class="monitor-item__text">
+                                        675-925 — код для входа в Яндекс
+                                    </p>
+                                    <button class="btn-copy cp" data-clipboard-text="675-925">
+                                        Код из СМС: <b>675-925</b>
+                                    </button>
+                                </div>
+                                <div class="monitor-item">
+                                    <div class="monitor-item-header">
+                                        <p class="monitor-item__heading +***7097">+***7097</p>
+                                        <p class="monitor-item__time">5 минут назад</p>
+                                    </div>
+                                    <p class="monitor-item__text">
+                                        +77714737097
+                                    </p>
+                                    <button class="btn-copy cp" data-clipboard-text="-">
+                                        Код из СМС: <b>-</b>
+                                    </button>
+                                </div>
+                                <div class="monitor-item">
+                                    <div class="monitor-item-header">
+                                        <p class="monitor-item__heading polza.ru">POLZA.RU</p>
+                                        <p class="monitor-item__time">5 минут назад</p>
+                                    </div>
+                                    <p class="monitor-item__text">
+                                        587613 код авторизации в личном кабинете POLZAru
+                                    </p>
+                                    <button class="btn-copy cp" data-clipboard-text="587613">
+                                        Код из СМС: <b>587613</b>
+                                    </button>
+                                </div>
+                                <div class="monitor-item">
+                                    <div class="monitor-item-header">
+                                        <p class="monitor-item__heading 7522">7522</p>
+                                        <p class="monitor-item__time">5 минут назад</p>
+                                    </div>
+                                    <p class="monitor-item__text">
+                                        Вы подключили платный доступ на готовые домашние задания Spishi за 30.0 руб./
+                                        день.
+                                        Плата будет списываться ежедневно со счета телефона. Для отключения платного
+                                        доступа
+                                        отправьте СТОП spsh на 7522.
+                                        Подробнее о сервисе: https://spishi.vip/rules.html
+                                        Получить консультацию: 8800-551-7755
+                                    </p>
+                                    <button class="btn-copy cp" data-clipboard-text="7522">
+                                        Код из СМС: <b>7522</b>
+                                    </button>
+                                </div>
+                                <div class="monitor-item">
+                                    <div class="monitor-item-header">
+                                        <p class="monitor-item__heading yandex">Yandex</p>
+                                        <p class="monitor-item__time">6 минут назад</p>
+                                    </div>
+                                    <p class="monitor-item__text">
+                                        588015 - код для замены номера в Яндекс ID
+                                    </p>
+                                    <button class="btn-copy cp" data-clipboard-text="588015">
+                                        Код из СМС: <b>588015</b>
+                                    </button>
+                                </div>
+                                <div class="monitor-item">
+                                    <div class="monitor-item-header">
+                                        <p class="monitor-item__heading 7522">7522</p>
+                                        <p class="monitor-item__time">6 минут назад</p>
+                                    </div>
+                                    <p class="monitor-item__text">
+                                        Вы подключили платный доступ на готовые домашние задания Spishi [SMS2 missed]
+                                        [SMS3
+                                        missed] [SMS4 missed] [SMS5 missed]
+                                    </p>
+                                    <button class="btn-copy cp" data-clipboard-text="SMS2">
+                                        Код из СМС: <b>SMS2</b>
+                                    </button>
+                                </div>
+                                <div class="monitor-item">
+                                    <div class="monitor-item-header">
+                                        <p class="monitor-item__heading +***9957">+***9957</p>
+                                        <p class="monitor-item__time">7 минут назад</p>
+                                    </div>
+                                    <p class="monitor-item__text">
+                                        +74991109957
+                                    </p>
+                                    <button class="btn-copy cp" data-clipboard-text="-">
+                                        Код из СМС: <b>-</b>
+                                    </button>
+                                </div>
+                                <div class="monitor-item">
+                                    <div class="monitor-item-header">
+                                        <p class="monitor-item__heading 7522">7522</p>
+                                        <p class="monitor-item__time">7 минут назад</p>
+                                    </div>
+                                    <p class="monitor-item__text">
+                                        Ваш код: 6857 для подключения платного доступа на готовые домашние задания
+                                        Spishi за
+                                        30.0 руб./день. Введите его на сайте spishi.vip.
+                                    </p>
+                                    <button class="btn-copy cp" data-clipboard-text="6857">
+                                        Код из СМС: <b>6857</b>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="questions">
+            <div class="container">
+                <h2>Вопросы и ответы о бесплатном приеме СМС </h2>
+                <div class="dropdown">
+                    <p class="dropdown-btn">
+                        Не приходят сообщения на указанный телефон.
+                    </p>
+                    <div class="dropdown-content">
+                        Есть несколько причин. Во-первых, это может быть банальная несовместимость, из-за которой
+                        конкретный оператор и ресурс, на котором вы пытаетесь зарегистрироваться или запросить обратное
+                        сообщение, не может достучаться до указанного адреса. Во-вторых, этот сайт может числиться в
+                        нашем черном списке. Туда входят банки, микрокредитные организации, сайты с платными подписками
+                        и другие нежелательные проекты.
+                        В связи с большим количеством случаев мошенничества, на этом и подобных сервисах запрещено
+                        использовать виртуальные номера бесплатно с целью регистрации или получения доступа к любым
+                        кредитно-финансовым ресурсам. Вы просто не сможете получить смс из некоторых источников, так как
+                        они по умолчанию находятся в нашем черном списке.
+
+                        Еще такии ситуации происходят по причине несовместимости конкретных ресурсов и операторов
+                        сотовой связи или проблем с сетью у этих операторов. Решить проблему можно сменой одного номера
+                        на другой (постарайтесь выбрать поставщика услуг, который расположен в одном регионе с ресурсом,
+                        на котором вы проходите регистрацию). К примеру, лучший виртуальный номер для ВК бесплатно – это
+                        российский, белорусский, украинский или другой СНГшный оператор.
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="dropdown-btn">
+                        Есть ли какие-либо лимиты на пользование бесплатными услугами?
+                    </p>
+                    <div class="dropdown-content">
+                        Нет, виртуальный номер бесплатно для смс может принимать неограниченное количество сообщений,
+                        плюс пользователь в любой момент имеет возможность сменить один телефон на другой, если тот
+                        вдруг перестал соответствовать его нуждам. К примеру, когда виртуальный прием смс невозможен по
+                        причине уже произведенной регистрации, сделанной через сервис другим пользователем.
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="dropdown-btn">
+                        Как приобретается виртуальный номер телефона для смс?
+                    </p>
+                    <div class="dropdown-content">
+                        В настоящий момент купить сим-карту и использовать ее удаленно нельзя, но можно взять в аренду
+                        на определенный период времени (на срок от нескольких часов, до недель и месяца). Наша
+                        демократичная ценовая политика построена таким образом, что чем дольше вы предполагаете
+                        использовать телефон для приема смс, тем меньше заплатите за каждый час действия этой услуги.
+                        Это позволяет продолжительное время продуктивно использовать предоставленные номера.
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="dropdown-btn">
+                        Как это работает?
+                    </p>
+                    <div class="dropdown-content">
+                        Мы предлагаем более 20 бесплатных номеров для приема СМС онлайн. Мы стараемся менять большинство
+                        этих номеров каждый день, чтобы исключить возможность повторного подтверждения телефона другим
+                        пользователем в той же веб-службе. В большинстве случаев мы используем настоящие сим-карты, что
+                        гарантирует получение SMS от любого отправителя. Время приема нового SMS зависит от оператора,
+                        но в большинстве случаев ваше SMS должно появиться примерно через. Сегментированные сообщения
+                        появляются на сайте только после поступления последней части. минута.
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="dropdown-btn">
+                        Пишут, что номер уже используется. Почему?
+                    </p>
+                    <div class="dropdown-content">
+                        Дело в том, что находящиеся в свободном доступе телефоны используются сотнями людей (вы даже
+                        можете увидеть счетчик полученных SMS по каждому из них, они нередко исчисляются тысячами).
+                        Крупные сайты вроде социальной сети ВКонтакте обычно очень популярны, поэтому найти доступный
+                        номер бывает нелегко. Единственный быстрый вариант – купить номер для приема смс.
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="dropdown-btn">
+                        Есть ли у вас номера телефонов онлайн на 10 минут?
+                    </p>
+                    <div class="dropdown-content">
+                        Дело в том, что находящиеся в свободном доступе телефоны используются сотнями людей (вы даже
+                        можете увидеть счетчик полученных SMS по каждому из них, они нередко исчисляются тысячами).
+                        Крупные сайты вроде социальной сети ВКонтакте обычно очень популярны, поэтому найти доступный
+                        номер бывает нелегко. Единственный быстрый вариант – купить номер для приема смс.
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="dropdown-btn">
+                        Могу ли я создать виртуальный номер?
+                    </p>
+                    <div class="dropdown-content">
+                        Нет, такая возможность отсутствует. Работа сервиса основывается на наличии у нас в распоряжении
+                        реальных сим-карт мобильных операторов различных стран и регионов. Соовтетственно, пользователь
+                        может получить виртуальный номер бесплатно или платно, но только выбрав вариант из доступного
+                        перечня. Он достаточно широк, поэтому вы легко найдете для себя что-нибудь подходящее.
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="dropdown-btn">
+                        Можно ли принимать сегментированные смс сообщения?
+                    </p>
+                    <div class="dropdown-content">
+                        Можно ли принимать на сотовый номер бесплатно сегментированные сообщения? – Да, на нашем сервисе
+                        отлично реализована функция работы с такими смс. Чтобы отправленные кусочки текста не затерялись
+                        между сообщениями других пользователей, они все группируются в одно большое SMS, которое
+                        высвечивается на экране лишь после доставки последней части. А если вы беспокоитесь за
+                        сохранность информации, всегда можно купить виртуальный номер для ВК и других активностей.
+                        Сообщения с него будут размещаться у вас в профиле и не попадут на всеобщее обозрение.
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="dropdown-btn">
+                        Могу ли я заменить платные виртуальные номера онлайн, если они мне не подошли?
+                    </p>
+                    <div class="dropdown-content">
+                        Администрация нашего проекта очень дорожит его репутацией, поэтому потребители платных услуг
+                        могут не волноваться по поводу их качества. В случае возникновения проблем по технической части
+                        или несоответствия заявленному функционалу, вопрос будет решаться в пользу заказчика. И один из
+                        вариантов – замена выданного номера на другой, способный удовлетворить запросы клиента.
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="dropdown-btn">
+                        Можно ли использовать виртуальный номер телефона бесплатно для FB и других социальных сетей?
+                    </p>
+                    <div class="dropdown-content">
+                        Да, вы можете зарегистрировать себе страничку, не привязывая к ней свою сим-карту и не нарушая
+                        свою конфиденциальность. Но в связи с большим количеством таких же желающих, использовать
+                        конкретный телефон иногда бывает проблематично. Его уже могут занять. Если вы хотите
+                        гарантированно быстро создать новый профиль, рекомендуется приобрести виртуальный номер телефона
+                        для FB по подписке на минимальный период времени и использовать его для создания любых страниц
+                        на посещаемых ресурсах.
+                    </div>
+                </div>
+                <div class="dropheight">
+                    <p class="dropheight__heading">Сервис временных номеров телефонов 24/7 </p>
+                    <p>
+                        sms-activation-service.com это онлайнс сервис и телефонная компания для приема SMS сообщений на
+                        виртуальную SIM. Верификация через SMS является обязательной для большиснтва социальных сетей и
+                        онлайн-сервисов в совремеенном мире. Пользователю при регистрации отправляется код
+                        подтверждения. Таким образом, он подтверждает подлинность запроса для завершения регистрации.
+                        Использование основного номера не всегда возможно. Временный номер телефона станет хорошей
+                        альтерантивой.
+                        <br>
+                        <br>
+                        Наша главная цель - предоставить альтернативу физическим SIM-картам для каждого пользователя.
+                        Любой желающий может получить SMS онлайн на сайте. В этом и заключается главное преимущество.
+                        <br>
+                        <br>
+                        Настояшая сим больше не нужна!
+                        Бесплатный виртуальный номер подходит для регистрации на сайтах; ВК, Яндекс, Google, Snapchat,
+                        Tinder, QQ, Facebook, Aliexpress, Apple, Instagram, Telegram, Uber, Microsoft,
+                        Discord, Viber, Amazon, Yahoo, Line, KakaoTalk, Netflix, YouTube, OkCupid, Imo, WeChat, TextNow,
+                        Skype,, CraigsList, Outlook,
+                        Lyft, Coinbase, eBay, Signal, Robinhood, Twilio, Truecaller, Yandex, Taobao, Roblox, Vkcom,
+                        Naver, Sweatcoin, Steam, Nike, Mailru, Grab, Baidu, Michat/ Сообщения всегда доступны. Здесь
+                        пользователи могут получить доступ к телефонам в более чем 20 странах. Наш сайт поддерживает
+                        прием виртуальных сообщений большинства сайтов интернета. Он включает в себя одноразовый
+                        SMS-сервис для регистрации в любой социальной сети и даже больше.
+                        <br>
+                        <br>
+                        Наша компания хорошо работает и ориентирована на все категории пользователей. У нас самые
+                        большие базы выделенных номеров и возможность охватаывать большинство всех популярных сервисов
+                        для регистрации. Считайте, что это сайт SMS-приемника.
+                    </p>
+                    <button class="dropheight-btn">Показать</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-links">
+                    <div class="footer-list">
+                        <ul>
+                            <li class="heading">О сайте</li>
+                            <li><a href="https://sms-activation-service.com/ru/api-sms-activate/">API</a></li>
+                            <li><a href="https://sms-activation-service.com/ru/faq/">Часто задаваемые вопросы</a></li>
+                            <li><a href="https://sms-activation-service.com/ru/limit/">Запреты и ограничения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <ul>
+                            <li class="heading">Пользователям</li>
+                            <li><a href="https://sms-activation-service.com/ru/dev-referral/">Интеграция с Sms service
+                                </a></li>
+                            <li><a href="https://sms-activation-service.com/ru/how-it-works/">Как работает активатор</a>
+                            </li>
+                            <li><a href="https://sms-activation-service.com/ru/resellers/">Реселлерам</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <ul>
+                            <li class="heading">Сотрудничество</li>
+                            <li><a href="https://sms-activation-service.com/ru/refferal-sms-activation/">Реферальная
+                                    программа</a></li>
+                            <li><a href="https://sms-activation-service.com/ru/rules/">Правила использования</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list footer-list-social">
+                        <div class="footer-list-container">
+                            <a href="https://sms-activation-service.pro/ru/?ch-free-ru" class="btn-2">
+                                <img src="../free-numbers-res/img/icon-call.svg" alt="img">
+                                Купить номер
+                            </a>
+                            <a href="https://sms-activation-service.pro/ru/?ch-free-ru" class="btn-2">
+                                <img src="../free-numbers-res/img/icon-phone.svg" alt="img">
+                                Аренда номера
+                            </a>
+
+                            <a href="tg://resolve?domain=sms_service_online" class="btn-2">
+                                <img src="../free-numbers-res/img/icon-telegram.svg" alt="img">
+                                Мы в телеграме
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <a href="https://sms-activation-service.pro/ru/?ch-free-ru">Виртуальные номера телефонов</a>
+                    <a href="https://sms-activation-service.pro/ru/?ch-free-ru">Одноразовые номера для смс</a>
+                    <a href="https://sms-activation-service.pro/ru/?ch-free-ru">Временные номера телефонов с смс</a>
+                    <a href="https://sms-activation-service.pro/ru/?ch-free-ru">Фейковые sms номера</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="logo">
+                        <img src="../free-numbers-res/img/logo-icon.svg" alt="svg">
+                        <span class="logo-text">SMS SERVICE</span>
+                        <span class="logo-descr">
+                            Временные номера для приема смс
+                        </span>
+                    </div>
+                    <div class="wallets" style="margin-left: -10em;">
+                        <img src="../free-numbers-res/img/wallets/master%20card.svg" alt="img">
+
+                        <img src="../free-numbers-res/img/wallets/visa.svg" alt="img">
+
+                        <img src="../free-numbers-res/img/wallets/qivi.svg" alt="img">
+                        <img src="../free-numbers-res/img/wallets/payeer.svg" alt="img">
+                    </div>
+                    <div class="footer-btns">
+
+                        <div class="dropdown dropdown-lang">
+                            <button class="dropdown-btn header__btn header__lang">
+                                Ru
+                                <img src="../free-numbers-res/img/falgs/ru.jpg" alt="img">
+                            </button>
+                            <div class="dropdown-content">
+                                <div class="wrapper">
+                                    <a href="index.htm">
+                                        RU
+                                        <img src="../free-numbers-res/img/falgs/ru.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-en/">
+                                        EN
+                                        <img src="../free-numbers-res/img/falgs/um.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-pt/">
+                                        PT
+                                        <img src="../free-numbers-res/img/falgs/pt.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-tr/">
+                                        TR
+                                        <img src="../free-numbers-res/img/falgs/tr.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-cn/">
+                                        CN
+                                        <img src="../free-numbers-res/img/falgs/cn.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-de/">
+                                        DE
+                                        <img src="../free-numbers-res/img/falgs/de.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-es/">
+                                        ES
+                                        <img src="../free-numbers-res/img/falgs/es.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-fr/">
+                                        FR
+                                        <img src="../free-numbers-res/img/falgs/fr.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-kr/">
+                                        KR
+                                        <img src="../free-numbers-res/img/falgs/kr.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-pl/">
+                                        PL
+                                        <img src="../free-numbers-res/img/falgs/pl.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-id/">
+                                        ID
+                                        <img src="../free-numbers-res/img/falgs/id.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-nl/">
+                                        NL
+                                        <img src="../free-numbers-res/img/falgs/nl.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-vn/">
+                                        VN
+                                        <img src="../free-numbers-res/img/falgs/vn.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-th/">
+                                        TH
+                                        <img src="../free-numbers-res/img/falgs/th.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-cz/">
+                                        CZ
+                                        <img src="../free-numbers-res/img/falgs/cz.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-it/">
+                                        IT
+                                        <img src="../free-numbers-res/img/falgs/it.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-jp/">
+                                        JP
+                                        <img src="../free-numbers-res/img/falgs/jp.svg" alt="img">
+                                    </a>
+                                    <a href="https://sms-activation-service.com/free-numbers-cn/">
+                                        CN
+                                        <img src="../free-numbers-res/img/falgs/cn.svg" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-menu header__btn"></button>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal" id="modal-info">
+            <div class="modal-content">
+                <button class="modal-close"></button>
+                <h4 class="subheading">
+                    Номера телефонов, полученные на данном сервисе, не должны быть использованы в любых противозаконных
+                    действиях. Запрещено использовать номера телефонов для сайтов имеющих статус повышенного риска, к
+                    которым относятся: платежные системы, банки, кредитные организации.
+                </h4>
+
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/clipboard.min.js"></script>
+    <script src="static/axios/dist/axios.min.js"></script>
+    <script src="static/js/main.js"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+        ym(54125821, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            trackHash: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/54125821" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async="" src="../gtag/js?id=UA-138576813-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-138576813-2');
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'8c9bff823d16c032',t:'MTcyNzQ0NTM5Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
