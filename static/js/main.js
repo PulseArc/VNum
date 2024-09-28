@@ -198,23 +198,7 @@ function getFreeMessagesScrollHandler() {
     );
   });
 
-  $(document).on(
-    "click",
-    '#activity [data-action="refresh-messages-list"]',
-    function (e) {
-      e.preventDefault();
-
-      let button = $(this);
-      let parent = button.closest("#messages-list");
-      let countryCodeApi = parent.data("country-code-api");
-      let number = parent.data("number");
-      let page = 1;
-
-      messageListPage = 2;
-      getFreeMessages(countryCodeApi, number, page);
-    },
-  );
-
+ 
   $(document).on("submit", '[data-widget="sendForm"]', async function (e) {
     e.preventDefault();
 
@@ -281,42 +265,42 @@ function getFreeMessagesScrollHandler() {
     }
   });
 
+  document.addEventListener('DOMContentLoaded', function () {
+    // Изначально активируем контейнер с ID 79376304616
+    const initialContainerId = '79376304616';
+    const initialContainer = document.getElementById(initialContainerId);
 
+    if (initialContainer) {
+        // Скрываем все контейнеры с сообщениями
+        document.querySelectorAll('.message-container').forEach(container => {
+            container.style.display = 'none';
+        });
 
-  $(document).ready(function() {
-    // При нажатии на любую ссылку внутри #left-number
-    $('#left-number').on('click', 'a', function(event) {
-        event.preventDefault(); // предотвращает переход по ссылке
-
-        // Проверяем текст ссылки
-        if ($(this).text().includes("+79372642875")) {
-            // Скрываем другой контент и отображаем блок #russia-block
-            $('#activity-header-none').html(''); // очищаем содержимое, если нужно
-            $('#russia-block1').show();    // отображаем блок #russia-block
-        } else if ($(this).hasClass('btn-ref')) {
-            // Скрываем #russia-block и показываем другой контент
-            $('#russia-block1').hide();   // скрываем блок #russia-block
-            $('#activity-header-none').html('<p>Список сообщений обновляется...</p>'); // обновляем сообщения
-        }
-    });
+        // Показываем целевой контейнер
+        initialContainer.style.display = 'block';
+    }
 });
 
 
-$(document).ready(function() {
-  // При нажатии на любую ссылку внутри #left-number
-  $('#left-number').on('click', 'a', function(event) {
-      event.preventDefault(); // предотвращает переход по ссылке
 
-      // Проверяем текст ссылки
-      if ($(this).text().includes("+79376304616")) {
-          // Скрываем другой контент и отображаем блок #russia-block
-          $('#activity-header-none').html('');
-          $('#none').html(''); // очищаем содержимое, если нужно
-          $('#russia-block2').show();    // отображаем блок #russia-block
-      } else if ($(this).hasClass('btn-ref')) {
-          // Скрываем #russia-block и показываем другой контент
-          $('#russia-block2').hide();   // скрываем блок #russia-block
-          $('#activity-header-none').html('<p>Список сообщений обновляется...</p>'); // обновляем сообщения
-      }
+  
+  document.querySelectorAll('#left-number a').forEach(link => {
+      link.addEventListener('click', function(event) {
+          event.preventDefault(); // Предотвращаем переход по ссылке
+
+          // Скрываем все контейнеры с сообщениями
+          document.querySelectorAll('.message-container').forEach(container => {
+              container.style.display = 'none';
+          });
+
+          // Получаем ID целевого контейнера из data-target ссылки
+          const targetId = this.getAttribute('data-target');
+          const targetContainer = document.getElementById(targetId);
+
+          // Показываем целевой контейнер
+          if (targetContainer) {
+              targetContainer.style.display = 'block';
+          }
+      });
   });
-});
+
