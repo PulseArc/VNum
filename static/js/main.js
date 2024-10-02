@@ -9,17 +9,6 @@ $(document).ready(function () {
   });
 
   /*---------------------------------------------------end*/
-  $(document).on("click", ".dropdown-btn", function () {
-    let el = $(this);
-    if (!el.closest(".activity-list").length) {
-      $(this).toggleClass("active");
-      $(this).parent(".dropdown").toggleClass("active");
-      $(this).next(".dropdown-content").slideToggle();
-    }
-  });
-
-  /*---------------------------------------------------end*/
-
   $(".dropheight-btn").click(function () {
     contParent = $(this).parent(".dropheight");
     if ($(this).hasClass("active")) {
@@ -304,3 +293,15 @@ function getFreeMessagesScrollHandler() {
       });
   });
 
+  $(document).ready(function() {
+    $('.dropdown-btn').on('click', function() {
+        const $dropdownContent = $(this).siblings('.dropdown-content');
+        
+        // Переключаем видимость содержимого
+        $dropdownContent.toggleClass('hidden');
+        
+        // Изменяем атрибут data-visible кнопки
+        const isVisible = $dropdownContent.hasClass('hidden') ? 'false' : 'true';
+        $(this).attr('data-visible', isVisible);
+    });
+});
