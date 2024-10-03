@@ -27,7 +27,7 @@ $(document).ready(function () {
   new ClipboardJS(".cp");
 
   $(document).on("click", ".cp", function () {
-    $(this).prepend('<span class="cp-success">СМС скопировано (Copied)</span>');
+    $(this).prepend('<span class="cp-success">Скопировано (Copied)</span>');
     $(document).find(".cp-success").fadeIn(500);
     setTimeout(function () {
       $(document).find(".cp-success").remove();
@@ -306,19 +306,4 @@ function getFreeMessagesScrollHandler() {
     });
 });
 
-document.querySelector('.btn-ref').addEventListener('click', function() {
-  // Сохраняем положение прокрутки в localStorage
-  localStorage.setItem('scrollPosition', window.scrollY);
-  // Обновляем страницу
-  location.reload();
-});
 
-// Восстанавливаем положение прокрутки при загрузке страницы
-window.addEventListener('load', function() {
-  const scrollPosition = localStorage.getItem('scrollPosition');
-  if (scrollPosition) {
-    window.scrollTo(0, parseInt(scrollPosition));
-    // Очищаем localStorage, чтобы избежать сохранения положения после обновления
-    localStorage.removeItem('scrollPosition');
-  }
-});
