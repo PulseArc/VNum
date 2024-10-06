@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Disallow: /login/
 Disallow: /private/
-Sitemap: https://vnum-ed7.pages.dev/
+Sitemap: https://vnum-ed7.pages.dev/sitemap.xml
