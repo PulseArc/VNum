@@ -306,11 +306,14 @@ function getFreeMessagesScrollHandler() {
     });
 });
 
-document.querySelector('.btn-ref').addEventListener('click', function() {
-  // Сохраняем положение прокрутки в localStorage
-  localStorage.setItem('scrollPosition', window.scrollY);
-  // Обновляем страницу
-  location.reload();
+// Находим все кнопки с классом .btn-ref и добавляем обработчик для каждой
+document.querySelectorAll('.btn-ref').forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Сохраняем положение прокрутки в localStorage
+    localStorage.setItem('scrollPosition', window.scrollY);
+    // Обновляем страницу
+    location.reload();
+  });
 });
 
 // Восстанавливаем положение прокрутки при загрузке страницы
