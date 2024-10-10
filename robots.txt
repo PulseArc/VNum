@@ -2,9 +2,6 @@ User-agent: *
 Allow: /
 
 User-agent: Googlebot
-Disallow:
-
-User-agent: Googlebot
 Allow: /sync_cookie_image_check
 
 Sitemap: https://vnum-ed7.pages.dev/sitemap.xml
