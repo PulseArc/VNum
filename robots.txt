@@ -1,4 +1,1 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://vnum-ed7.pages.dev/6079749_22.html
+Sitemap: https://vnum-ed7.pages.dev/sitemap.xml
