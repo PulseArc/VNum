@@ -4,12 +4,8 @@ Allow: /
 User-agent: Googlebot
 Allow: /sync_cookie_image_check
 
-Sitemap: https://vnum-ed7.pages.dev/catalog-sitemap-01.xml
+Sitemap: https://vnum-ed7.pages.dev/sitemap.xml
 
-Sitemap: https://vnum-ed7.pages.dev/catalog-sitemap-02.xml
 
-Sitemap: https://vnum-ed7.pages.dev/catalog-sitemap-03.xml
-
-Sitemap: https://vnum-ed7.pages.dev/catalog-sitemap-04.xml
 
 
